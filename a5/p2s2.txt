@@ -1,0 +1,1 @@
+In the tree_delete_helper method and list_delete_element method, the pointers were being freed. Therefore, every element in the list, including the tree indexed nodes, got deleted and an empty string got printed instead of the tree indexed nodes. 

@@ -1,0 +1,4 @@
+Memory read: value of 2
+Memory write: value of 2
+Memory read: value of 4
+Memory write: value of 4
