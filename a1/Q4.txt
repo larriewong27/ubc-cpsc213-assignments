@@ -1,0 +1,6 @@
+Since the computer from the Hubble is a very old computer and is from the 1980's, I realized that it uses big endian while the computer that I am using uses an Intel Core i7 processor which uses little endian which is why the values are very off.
+
+Correct Values:
+
+521,829 is 0x0007F665 as a hexadecimal integer and the correct value would be 0x65F60700 
+-2,207,359 is 0xFFDE5181 as a hexadecimal integer and the correct value would be 0x8151DEFF

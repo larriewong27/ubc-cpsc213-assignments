@@ -1,0 +1,2 @@
+Example: FC2727FC
+Yes, we can generalize this example. For a 4 byte integer, the first byte has to be the same as the fourth byte and the second byte has to be the same as the third byte in order for its big and little endian representations to be identical.

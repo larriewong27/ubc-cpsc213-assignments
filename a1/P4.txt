@@ -1,0 +1,97 @@
+xxxxxxxs-MacBook-Pro:a1 xxxxxxx$ java Endianness A4 69 FC BA
+Memory Contents
+  Addr   Value
+    0:   0xa4   
+    1:   0x69   
+    2:   0xfc   
+    3:   0xba   
+The big    endian integer value at address 0 is 0xa469fcba
+The little endian integer value at address 0 is 0xbafc69a4
+
+xxxxxxxs-MacBook-Pro:a1 xxxxxxx$ java Endianness 0 0 0 0
+Memory Contents
+  Addr   Value
+    0:   0x0    
+    1:   0x0    
+    2:   0x0    
+    3:   0x0    
+The big    endian integer value at address 0 is 0x0
+The little endian integer value at address 0 is 0x0
+
+xxxxxxxs-MacBook-Pro:a1 xxxxxxx$ java Endianness FF FF FF FF
+Memory Contents
+  Addr   Value
+    0:   0xff   
+    1:   0xff   
+    2:   0xff   
+    3:   0xff   
+The big    endian integer value at address 0 is 0xffffffff
+The little endian integer value at address 0 is 0xffffffff
+
+xxxxxxxs-MacBook-Pro:a1 xxxxxxx$ java Endianness 23 44 FF 1D
+Memory Contents
+  Addr   Value
+    0:   0x23   
+    1:   0x44   
+    2:   0xff   
+    3:   0x1d   
+The big    endian integer value at address 0 is 0x2344ff1d
+The little endian integer value at address 0 is 0x1dff4423
+
+xxxxxxxs-MacBook-Pro:a1 xxxxxxx$ java Endianness 80 FF 80 FF
+Memory Contents
+  Addr   Value
+    0:   0x80   
+    1:   0xff   
+    2:   0x80   
+    3:   0xff   
+The big    endian integer value at address 0 is 0x80ff80ff
+The little endian integer value at address 0 is 0xff80ff80
+
+xxxxxxxs-MacBook-Pro:a1 xxxxxxx$ java Endianness 32 E 21 D3
+Memory Contents
+  Addr   Value
+    0:   0x32   
+    1:   0xe    
+    2:   0x21   
+    3:   0xd3   
+The big    endian integer value at address 0 is 0x320e21d3
+The little endian integer value at address 0 is 0xd3210e32
+
+xxxxxxxs-MacBook-Pro:a1 xxxxxxx$ java Endianness AS RM 43 21
+usage: java Endianness n0 n1 n2 n3
+where: n0..n3 are byte values in memory at addresses 0..3 respectively, in hex (no 0x).
+
+xxxxxxxs-MacBook-Pro:a1 xxxxxxx$ java Endianness 313232 DE EA AF
+Memory Contents
+  Addr   Value
+    0:   0x32   
+    1:   0xde   
+    2:   0xea   
+    3:   0xaf   
+The big    endian integer value at address 0 is 0x32deeaaf
+The little endian integer value at address 0 is 0xafeade32
+
+xxxxxxxs-MacBook-Pro:a1 xxxxxxx$ java Endianness E2 23 31
+usage: java Endianness n0 n1 n2 n3
+where: n0..n3 are byte values in memory at addresses 0..3 respectively, in hex (no 0x).
+
+xxxxxxxs-MacBook-Pro:a1 xxxxxxx$ java Endianness -10 AA AA CC
+Memory Contents
+  Addr   Value
+    0:   0xf0   
+    1:   0xaa   
+    2:   0xaa   
+    3:   0xcc   
+The big    endian integer value at address 0 is 0xf0aaaacc
+The little endian integer value at address 0 is 0xccaaaaf0
+
+xxxxxxxs-MacBook-Pro:a1 xxxxxxx$ java Endianness -EA -32 32 1E
+Memory Contents
+  Addr   Value
+    0:   0x16   
+    1:   0xce   
+    2:   0x32   
+    3:   0x1e   
+The big    endian integer value at address 0 is 0x16ce321e
+The little endian integer value at address 0 is 0x1e32ce16
