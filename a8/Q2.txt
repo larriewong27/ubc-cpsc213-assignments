@@ -1,0 +1,19 @@
+We ran aRead.c with 3 different inputs like we did for sRead.c and timed the execution of the program.
+
+10 blocks read by the disk: 
+real	0m0.014s
+user	0m0.011s
+sys	0m0.003s
+
+100 blocks read by the disk: 
+real	0m0.015s
+user	0m0.012s
+sys	0m0.002s
+
+1000 blocks read by the disk: 
+real	0m0.017s
+user	0m0.013s
+sys	0m0.003s
+
+We notice that aRead.c runs much faster than sRead.c even if aRead.c has a much larger number of disk reads. We also notice that there is no linear relationship between the number of disk reads and execution time like there was in sRead.c and that the execution time does not increase much as the number of disk reads increases. 
+We believe this the time of execution is very fast because the disk reads are asynchronous unlike sRead.c. In aRead.c, the disk reads are performed in parallel so all disk read requests are made at the same time before the approximate 10ms delay, while in sRead.c they are performed one after the other with a ~10ms delay between each one. So essentially there is only one ~10ms delay for 1000 reads, while in sRead.c there are a thousand ~10ms delays for 1000 reads. 

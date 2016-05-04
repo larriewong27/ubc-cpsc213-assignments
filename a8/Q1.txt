@@ -1,0 +1,18 @@
+When running sRead.c, we timed the execution of the program for three different number of blocks read by the disk.
+
+10 blocks read by the disk: 
+real	0m0.178s
+user	0m0.105s
+sys	0m0.004s
+
+100 blocks read by the disk:
+real	0m1.078s
+user	0m1.051s
+sys	0m0.017s
+
+1000 blocks read by the disk:
+real	0m10.762s
+user	0m10.543s
+sys	0m0.139s
+
+We notice that there is a linear relationship between the number of blocks read by the disk and the execution time because each disk read is synchronous so they occur one after another and they take 10ms. This gives a linear runtime complexity. 

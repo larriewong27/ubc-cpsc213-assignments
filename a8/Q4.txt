@@ -1,0 +1,1 @@
+In order to test the program, we first made sure it would run without errors. Then we played with uthread_create by changing the order in which producers and consumers were created. We noticed that when producers where created before consumers, producers_wait_count was more than consumers_wait_count. By reversing the order, you obtain the opposite situation.
