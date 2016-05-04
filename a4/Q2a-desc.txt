@@ -1,0 +1,1 @@
+There is one memory read when the first value at address s, which is s.x[i], is being loaded from the memory.
