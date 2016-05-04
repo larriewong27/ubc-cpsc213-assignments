@@ -1,0 +1,5 @@
+a. S7-static-call-stack stores in the stack the return address and then loads it in order to return from the function ping. S7-static-call-regs stores the return address in r6 and uses it to return from ping.
+
+b. The advantage of S7-static-call-stack is that by storing the ra in the stack, it allows the function to call other functions without losing its ra.
+
+c. The benefit of S7-static-call-regs is that it does not read or write in the memory, which makes it way much faster than S7-static-call-stack.
