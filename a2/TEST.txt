@@ -1,0 +1,1 @@
+The test we wrote is meant to test every single instruction implemented in the file CPU.java. We basically played with memory and register to check if each function would do what we expected them to do. We check each instruction using SimpleMachine213.jar and they all worked as expected. In order to test the indexed instructions, we also created an array and stored it to memory.
